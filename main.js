@@ -12,7 +12,7 @@ let bytes_a_comprobar = [
     ]
 
     function verificarParidad(matriz) {
-        let resultados = matriz.map(fila => {
+        let resultados = matriz.map(fila => {     //El argumento será asignado automáticamente a cada elemento del arreglo conforme map itera el arreglo original.
             let numeroDeUnos = fila.reduce((suma, bit) => suma + bit, 0);  //Para cada fila, se cuenta el número de unos usando reduce.
             return numeroDeUnos % 2 === 0;  //Se determina si el número de unos es par (% 2 === 0).
         });
